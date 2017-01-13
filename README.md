@@ -91,3 +91,6 @@ Registration on the portal http://developer.paasmer.co is necessary to connect t
 
 * The device would now be connected to the Paasmer IoT Platfrom and publishing sensor values are regular intervals.
 
+# Support
+
+The support forum is hosted on the GitHub where issues can be identified and the Team from Paasmer would be taking up requstes and resolving them. You could also send a mail to support@paasmer.co with the issue details for resolution.
