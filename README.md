@@ -23,6 +23,11 @@ Registration on the portal http://developer.paasmer.co, is necessary to connect 
 ```
 $ git clone github.com/PaasmerIoT/SBC-SDK.git
 $ cd SBC-SDK
+```
+
+* To connect the device to Paasmer IoT Platfrom, the following steps need to be performed.
+
+```
 $ cd external_libs/mbedTLS/
 $ make
 $ cd ../../
@@ -38,7 +43,7 @@ $ sed -i 's/alias PAASMER/#alias PAASMER/g' ~/.bashrc
 $ exit
 ```
 
-* Goto the diectory below.
+* Go to the diectory below.
 ```
 $ cd samples/linux/subscribe_publish_sample/
 ```
