@@ -7,7 +7,7 @@ The **Paasmer SDK** for **Single Board Computers (SBC)** like Raspberry-PI, Inte
 
 ## Featuers
 
-The **SBC-SDK** simplifies access to the Pub/Sub functionality of the **Paasmer IoT** broker via **MQTT**. The SDK has been tested to work with the **Paasmer IoT Platform** and **Raspberrp Pi 3**. Support for Other SBC's running any flavors of Linux would be available shortly.
+The **SBC-SDK** simplifies access to the Pub/Sub functionality of the **Paasmer IoT** broker via **MQTT**. The SDK has been tested to work on the **Raspberrp Pi 3** running Raspbian Jessie. Support for Other SBC's running any flavors of Linux would be available shortly.
 
 ## MQTT Connection
 
@@ -15,7 +15,7 @@ The **SBC-SDK** provides functionality to create and maintain a mutually authent
 
 ## Pre Requisites
 
-Registration on the portal http://developer.paasmer.co is necessary to connect the device to the **Paasmer IoT Platfrom** .The SDK has been tested on the Raspberry PI 3 with Raspbian Jessie (https://downloads.raspberrypi.org/raspbian_latest)
+Registration on the portal http://developer.paasmer.co, is necessary to connect the devices to the **Paasmer IoT Platfrom** .The SDK has been tested on the Raspberry PI 3 with Raspbian Jessie (https://downloads.raspberrypi.org/raspbian_latest)
 
 # Installation
 
@@ -29,7 +29,7 @@ $ cd ../../
 $ sudo ./install.sh
 ```
 
-* Upon successful completion of the above command, a few commands which need to be executed are displayed.
+* Upon successful completion of the above command, the following commands need to be executed.
 ```
 $ sudo su
 $ source ~/.bashrc
@@ -43,7 +43,7 @@ $ exit
 $ cd samples/linux/subscribe_publish_sample/
 ```
 
-* Edit the config.h file to include the user name(Email), device name and feed names and GPIO pins
+* Edit the config.h file to include the user name(Email), device name, feed names and GPIO pin details.
 ```c
 #define UserName "Email Address" //your user name used in developer.paasmer.co for registration
 #define DeviceName "" //your device name
@@ -72,11 +72,11 @@ $ sudo make
 $ sudo ./subscribe_publish_sample
 ```
 
-* The device would now be connected to the Paasmer IoT Platfrom and publishing sensor values are regular intervals.
+* The device would now be connected to the Paasmer IoT Platfrom and publishing sensor values are specified intervals.
 
 ## Support
 
-The support forum is hosted on the GitHub where issues can be identified and the Team from Paasmer would be taking up requstes and resolving them. You could also send a mail to support@paasmer.co with the issue details for resolution.
+The support forum is hosted on the GitHub, issues can be identified by users and the Team from Paasmer would be taking up requstes and resolving them. You could also send a mail to support@paasmer.co with the issue details for quick resolution.
 
 ## Note
 
