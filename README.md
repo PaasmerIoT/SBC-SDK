@@ -15,7 +15,7 @@ The **SBC-SDK** provides functionality to create and maintain a mutually authent
 
 ## Pre Requisites
 
-Registration on the portal http://developer.paasmer.co, is necessary to connect the devices to the **Paasmer IoT Platfrom** .The SDK has been tested on the Raspberry PI 3 with Raspbian Jessie (https://downloads.raspberrypi.org/raspbian_latest)
+Registration on the portal http://developers.paasmer.co, is necessary to connect the devices to the **Paasmer IoT Platfrom** .The SDK has been tested on the Raspberry PI 3 with Raspbian Jessie (https://downloads.raspberrypi.org/raspbian_latest)
 
 # Installation
 
