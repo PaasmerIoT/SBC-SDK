@@ -1,6 +1,7 @@
 #!/bin/bash
 
 path=`pwd`
+
 cat > .Install.log << EOF3
 Logfile for Installing Paasmer...
 
@@ -46,6 +47,9 @@ aws_access_key_id = $keyid
 sudo tar -xf wiringPi.tar -C ../
 sudo chmod -R 777 ../../*
 sudo tar -xf subscribe_publish_sample.tar -C $path/samples/linux/
+
+mac=$(ifconfig | grep 'HWaddr' |awk '{print $5}' | head -n 1)
+echo "#define MAC \"$mac\"" > $path/samples/linux/subscribe_publish_sample/mac.h
 
 
 echo "-----BEGIN CERTIFICATE-----
@@ -126,3 +130,4 @@ echo "-->  3) PAASMER "
 echo "-->  4) sed -i 's/alias PASSMER/#alias PASSMER/g' ~/.bashrc "
 echo "-->  5) exit "
 echo "**************************************************************"
+
