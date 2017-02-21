@@ -112,7 +112,7 @@ source ~/.bashrc
 echo '#!/bin/bash
 source ~/.bashrc;
 sudo PAASMER;
-sudo sed -i 's/alias PASSMER/#alias PASSMER/g' ~/.bashrc
+sudo sed -i 's/alias PAASMER/#alias PAASMER/g' ~/.bashrc
 #PAASMER;
 echo "Done Installing...";' > $path/Configure.sh
 
@@ -127,7 +127,7 @@ echo "-->  Run below commands.."
 echo "-->  1) sudo su "
 echo "-->  2) source ~/.bashrc "
 echo "-->  3) PAASMER "
-echo "-->  4) sed -i 's/alias PASSMER/#alias PASSMER/g' ~/.bashrc "
+echo "-->  4) sed -i 's/alias PAASMER/#alias PAASMER/g' ~/.bashrc "
 echo "-->  5) exit "
 echo "**************************************************************"
 
