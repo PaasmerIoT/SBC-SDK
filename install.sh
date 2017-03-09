@@ -6,7 +6,7 @@ cat > .Install.log << EOF3
 Logfile for Installing Paasmer...
 
 EOF3
-
+RANDOM=$$
 echo $path >> .Install.log
 user=$(echo $USER)
 user='/home/'$user
@@ -96,24 +96,14 @@ echo $ARN >> .Install.log
 no=$RANDOM
 sudo aws iot create-policy --policy-name Paasmer-thing-policy-$no --policy-document '{ "Version": "2012-10-17", "Statement": [{"Action": ["iot:*"], "Resource": ["*"], "Effect": "Allow" }] }' >> .Install.log
 
-function Paasmer {
-  echo "alias PAASMER='sudo aws iot attach-principal-policy --policy-name Paasmer-thing-policy-$no --principal $ARN'" >> ~/.bashrc
-#  echo "alias PAASMER='sudo aws iot attach-principal-policy --policy-name Paasmer-thing-policy-$no --principal $ARN'" >> $user/.bashrc
-  #export $(theja)
-  echo "Added to alias...\n" >> .Install.log
-}
+echo "alias PAASMER='sudo aws iot attach-principal-policy --policy-name Paasmer-thing-policy-$no --principal $ARN'" >> ~/.bashrc
+echo "Added to alias...\n" >> .Install.log
 
-Paasmer
-
-source ~/.bashrc
-
-#xterm -e "sudo PAASMER"
 
 echo '#!/bin/bash
 source ~/.bashrc;
 sudo PAASMER;
 sudo sed -i 's/alias PAASMER/#alias PAASMER/g' ~/.bashrc
-#PAASMER;
 echo "Done Installing...";' > $path/Configure.sh
 
 sudo chmod -R 777 ./*
