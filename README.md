@@ -83,6 +83,6 @@ $ sudo ./subscribe_publish_sample
 
 The support forum is hosted on the GitHub, issues can be identified by users and the Team from Paasmer would be taking up requstes and resolving them. You could also send a mail to support@paasmer.co with the issue details for quick resolution.
 
-## Note
+## Note:
 
 The Paasmer IoT SBC-SDK utilizes the features provided by AWS-IOT-SDK for C.
