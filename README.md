@@ -5,7 +5,7 @@
 
 The **Paasmer SDK** for **Single Board Computers (SBC)** like Raspberry-PI, Intel Edison, Beagle Bone is a collection of source files that enables you to connect to the Paasmer IoT Platform. It includes the trasnport client for **MQTT** with **TLS** support.  It is distributed in source form and intended to be built into customer firmware along with application code, other libraries and RTOS.
 
-## Featuers
+## Features
 
 The **SBC-SDK** simplifies access to the Pub/Sub functionality of the **Paasmer IoT** broker via **MQTT**. The SDK has been tested to work on the **Raspberrp Pi 3** running Raspbian Jessie. Support for Other SBC's running any flavors of Linux would be available shortly.
 
