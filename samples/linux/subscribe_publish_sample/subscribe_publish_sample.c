@@ -368,11 +368,9 @@ sensordetails=1;
 //sprintf(cPayload, "{\n\"sensorType\" : \"%s\",\n\"%s\" :  \"22\"\n} ", "US sensor", "sensorData");
 else if (sensordetails==1){
 if(((timedelay++)%timePeriod)==0){
-//int a=1,b=1,c=1,d=1;
 int a = digitalRead(sensorpin1),b = digitalRead(sensorpin2),c = digitalRead(sensorpin3),d = digitalRead(sensorpin4);
 sprintf(cPayload, "{\n\"feedname1\" : \"%s\",\n\"sensorvalue1\" : \"%d\",\n\"feedname2\" : \"%s\",\n\"sensorvalue2\" : \"%d\",\n\"feedname3\" : \"%s\",\n\"sensorvalue3\" : \"%d\",\n\"feedname4\" : \"%s\",\n\"sensorvalue4\" : \"%d\",\n\"username\" : \"%s\",\n\"devicename\" : \"%s\"\n}",feedname1,a,feedname2,b,feedname3,c,feedname4,d,UserName,DeviceName);
  //sprintf(cPayload, "{\n\"sensorType\" : \"%s\",\n\"%s\" :  \"%s\"\n} ", "TEMP sensor","sensorData",path);
-//sprintf(cPayload, "{\n\"sensorType\" : \"%s\",\n\"%s\" :  \"%s\"\n} ", "TEMP sensor", "sensorData",path);
 		paramsQOS1.payloadLen = strlen(cPayload);
 		rc = aws_iot_mqtt_publish(&client, "paasmer_sensor_details",22, &paramsQOS1);
 		if (rc == MQTT_REQUEST_TIMEOUT_ERROR) {
